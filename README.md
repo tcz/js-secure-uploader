@@ -29,6 +29,8 @@ I am currently in the "yet" phase.
 
 - More tests - if js-test-driver was not so buggy, I could have written all the tests for all objects. But it is buggy.
 
+- Robustness - error handlng is definitely missing in some places
+
 - More user interface magic
 
 ## License ##
