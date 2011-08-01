@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript" src="lib/js-secure-uploader.js"></script>
+        <script type="text/javascript">
+            window.onload = function()
+            {
+                var oMessageBox = document.getElementById( 'message' );
+                var oFileInput = document.getElementById( 'file_path' );
+				var oUploader = new SecureUploader( oFileInput, {
+                    'url'               : 'example.php',
+                    'worker_path'       : 'lib/js-secure-uploader-worker.js',
+                    'chunk_size'        : 1048576, // 1MB.
+                    'start_on_change'   : true
+                } );
+
+                var nProgressInterval = setInterval( function()
+                {
+                    var nProgress = oUploader.getProgressPercentage();
+                    oMessageBox.innerHTML = Math.round( nProgress * 100 ) + '%';
+
+                    // When we finish, we don't need to update any more.
+                    if ( 1 == nProgress )
+                    {
+                        clearInterval( nProgressInterval );
+                    }
+                }, 200 );
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            <input id="file_path" type="file" />
+        </p>
+        <p id="message">
+        </p>
+    </body>
+</html>
