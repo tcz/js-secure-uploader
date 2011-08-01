@@ -15,16 +15,19 @@ For usage hint see examples. If you happen to miss the comment in the PHP exampl
 ...but will come soon.
 
 - Firefox support
+
 Once this bug is fixed in FF, it should work there too: https://bugzilla.mozilla.org/show_bug.cgi?id=664783
-I am planning to add support anywazs with async file read in the worker, but it's a bit ugly.
+I am planning to add support anyways with async file read in the worker, but it's a bit ugly.
 
 - Optimizations
+
 “The First Rule of Program Optimization: Don't do it. The Second Rule of Program Optimization (for experts only!): Don't do it yet.” - Michael A. Jackson
+
 I am currently in the "yet" phase.
 
 - More hash algorithms - you can open issues if you need any. CRC32 and MD5 are planned.
 
-- More tests - if js-test-driver would not be so buggy, I could have written all the tests for all objects. But it is buggy.
+- More tests - if js-test-driver was not so buggy, I could have written all the tests for all objects. But it is buggy.
 
 - More user interface magic
 
