@@ -12,6 +12,9 @@
 // something is wrong.
 set_error_handler( 'send_500', E_USER_ERROR );
 
+// Hash verification for big files might take looooong.
+set_time_limit( 0 );
+
 $target_dir = dirname( __FILE__ ) . '/chunks/' . $_POST['guid'];
 $target_name = basename( $_FILES['chunk']['name'] ) . "." . sprintf( '%015s', $_POST['offset'] );
 $target_path = $target_dir . "/" . $target_name;
