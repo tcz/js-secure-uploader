@@ -31,7 +31,7 @@ I am currently in the "yet" phase.
 
 - Robustness - error handlng is definitely missing in some places
 
-- More user interface magic
+- More events of the object, better communication with the rest of the JS code (onsuccess, onerror, onprogress...)
 
 ## License ##
 
