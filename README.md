@@ -16,8 +16,8 @@ For usage hint see examples. If you happen to miss the comment in the PHP exampl
 
 - Firefox support
 
-Once this bug is fixed in FF, it should work there too: https://bugzilla.mozilla.org/show_bug.cgi?id=664783
-I am planning to add support anyways with async file read in the worker, but it's a bit ugly.
+Once this bug is fixed in FF, it should work there too: https://bugzilla.mozilla.org/show_bug.cgi?id=667388
+It is a crappy issue with File object serialization when passed to Workers. Chrome solved this without problems. Try harder Mozilla.
 
 - Optimizations
 
