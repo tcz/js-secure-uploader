@@ -40,4 +40,5 @@ Js-secure-uploader comes for free, open-sourced, with the new (3 clause) BSD lic
 ## FAQ ##
 
 > "Why should I need "client-side integrity checking" ? I already have a CRC on Ethernet and TCP."
+
 > "Because data link is only one layer out of the 7 according to the OSI model, not to mention procedures that are out of the scope of the network transfer (moving file, etc)."
