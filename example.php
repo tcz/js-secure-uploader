@@ -8,6 +8,14 @@
  * DON'T USE THIS FILE IN PRODUCTION, IT ONLY SERVES AS DEMONSTRATION.
  */
 
+/**
+ * If you want to accept uploads from different origins, you might uncomment
+ * and edit this line:
+ */
+// header( 'Access-Control-Allow-Origin: http://origin-example.com' );
+
+if ( 'POST' !== $_SERVER['REQUEST_METHOD'] ) die;
+
 // We communicate with the script using status codes, so we need to send 500 if
 // something is wrong.
 set_error_handler( 'send_500', E_USER_ERROR );
