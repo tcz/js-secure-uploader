@@ -2,7 +2,7 @@
 
 Js-secure-uploader is a framework-independent Javascript library that allows you to upload files to a remote server with client-side integrity checking.
 
-It works with the latest HTML5 technologies (File API, Web workers) therefore its browser support is very limited, currently only works with Chrome.
+It works with the latest HTML5 technologies (File API, Web workers) therefore its browser support is limited, currently only works with Chrome and Firefox.
 
 It is capable to upload really big files to be combined on server side. It is because js-secure-uploader creates small chunks of the files, and calculates hash for each (and the entire file too).
 
@@ -13,11 +13,6 @@ For usage hint see examples. If you happen to miss the comment in the PHP exampl
 ## Things that are missing ##
 
 ...but will come soon.
-
-- Firefox support
-
-Once this bug is fixed in FF, it should work there too: https://bugzilla.mozilla.org/show_bug.cgi?id=667388
-It is a crappy issue with File object serialization when passed to Workers. Chrome solved this without problems. Try harder Mozilla.
 
 - Optimizations
 
