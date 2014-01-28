@@ -39,3 +39,6 @@ Js-secure-uploader comes for free, open-sourced, with the new (3 clause) BSD lic
 
 
 > "Because data link is only one layer out of the 7 according to the OSI model, not to mention procedures that are out of the scope of the network transfer (moving file, concatenating pieces, etc)."
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tcz/js-secure-uploader/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
